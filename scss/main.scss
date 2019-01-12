@@ -13,12 +13,36 @@ body {
 }
 
 section {
-
     padding: fromPxToRem(100px) 0;
+}
+
+button, textarea, button:active, textarea:active, button:focus, textarea:focus  {
+    outline: none;
 }
 
 .main {
     background: url('../img/main-bg.jpg') center center no-repeat;
+}
+
+.button {
+    color: $textColor;
+    background-color: #ffb700;
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    @include bold;
+    font-size: 1.2rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: linear-gradient($buttonsColorFrom, $buttonsColorTo);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.main, .popup {
+    
     padding: 4rem 0;
 
     &-content {
@@ -59,17 +83,6 @@ section {
         @include bold;
         margin-top: 3rem;
         display: block;
-    }
-
-    .button {
-        color: $textColor;
-        background: linear-gradient($buttonsColorFrom, $buttonsColorTo);
-        text-transform: uppercase;
-        border: none;
-        padding: 1rem 3rem;
-        border-radius: 5px;
-        @include bold;
-        font-size: 1.2rem;
     }
 
     .logoText {
@@ -129,6 +142,7 @@ section {
             width: 100%;
             padding: 1.5rem;
             margin: 2rem 0;
+            border-radius: 5px;
         }
 
         & label {
@@ -174,5 +188,210 @@ section {
 
     .adv_text p {
         font-size: 1.6rem;
+    }
+
+    .section-header {
+        margin: 10rem 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 3.6rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.6rem
+    }
+
+    &-block {
+        text-align: center;
+    }
+    &-img img{
+        height: 8rem;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+    
+    .slick-active {
+        outline: none;
+    }
+
+    .arrow {
+        position: absolute;
+        z-index: 99;
+        top: 50%;
+        transform: scaleY(-50%);
+        width: 2rem;
+        height: 2rem;
+        border: none;
+    }
+
+    .prev {
+        left: 0;
+        background: url('../img/svg/left-arrow.svg') center no-repeat;
+        background-size: 70%;
+    }
+
+    .next {
+        right: 0;
+        background: url('../img/svg/right-arrow.svg') center no-repeat;
+        background-size: 70%;
+    }
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    &-close {
+        position: absolute;
+        right: -1.5rem;
+        top: -1.7rem;
+        width: 2rem;
+        text-align: center;
+        border: none;
+        background-color: transparent;
+        font-size: 3rem;
+        color: $textColor;
+    }
+    &-content {
+        position: fixed;
+        left:50%;
+        top: 10%;
+        transform: translateX(-50%);
+        background-color: $textColor;
+        padding: 1rem;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    &-header {
+        font-weight: bold;
+    }
+}
+
+/* Секция с ценами */
+.price {
+    background-color: #005e00;
+
+    .section-header{
+        text-align: center;
+        margin: 2rem 0 10rem;
+        color: #fff;
+        font-size: fromPxToRem(16px);
+
+        h2 {
+            font-weight: bold;
+            font-size: 3rem;
+        }
+    }
+
+    &-button {
+        text-align: right;
+    }
+
+    &-header-btn {
+        margin-top: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    
+
+    &-block {
+        padding: 1rem 3rem 4rem;
+        min-height: 50rem;
+        background-color: #fff;
+        box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+        text-align: center;
+
+        h4{
+            margin: 3rem 0rem;
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+    }
+
+    &-tag {
+        font-size: 1.9rem;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    &-list {
+        list-style: none;
+        padding: 0;
+        min-height: 14rem;
+        font-size: 1.6rem;
+        line-height: 1.6;
+
+        li {
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 1.4rem;
+                height: 1.4rem;
+                vertical-align: middle;
+                background: url('../img/svg/checked.svg') no-repeat center;
+                background-size: 100%;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &-img{
+        img{
+            width: 100%;
+            max-height: 18.8rem;
+        }
+    }
+
+    
+}
+/* Секция с ценами */
+
+@media screen and (max-width: 1200px) {
+    .main .phone-link {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .main {
+        background-position: top right;
+
+        .logoText {
+            margin-left: 1.5rem;
+        }
+
+        &-title h1 {
+            font-size: 3.5rem;
+        }
+
+        .phone-link {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        background-position: top right;
+
+        .phone-link {
+            font-size: 2rem;
+        }
     }
 }
