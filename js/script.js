@@ -9,6 +9,11 @@ $(document).ready(function() {
         $('.popup').fadeOut(100);
     });
 
+    $('.feedback-slider').slick({
+        prevArrow: '<button typr="button" class="feedback-slider-btn feedback-prev-btn"><img src="img/feedback/left-arrow.png"></button>',
+        nextArrow: '<button typr="button" class="feedback-slider-btn feedback-next-btn"><img src="img/feedback/right-arrow.png"></button>'
+    });
+
     $('.feature-slider').slick({
         infinite: true,
         slidesToShow: 4,

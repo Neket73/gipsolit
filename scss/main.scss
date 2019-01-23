@@ -41,7 +41,7 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.main, .popup {
+.main, .popup, .feedback {
     
     padding: 4rem 0;
 
@@ -361,9 +361,138 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
 }
 /* Секция с ценами */
 
+
+/* Секция с отзывами */
+.feedback {
+    position: relative;
+    background: url('../img/feedback/bg.jpg') no-repeat center;
+    background-size: cover;
+
+    &-prev-btn {
+        left: -4rem;
+    }
+
+    &-next-btn {
+        right: -4rem;
+    }
+
+    &-slider {
+        padding: 5rem 6rem;
+        background-color: #fff;
+        box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+
+        .parametrs {
+            font-size: 1.6rem;
+        }
+
+        .media {
+            margin-top: 3rem;
+            font-size: 1.4rem;
+
+            &-body {
+                margin-left: 1.5rem; 
+            }
+
+            &-heading {
+                font-weight: bold;
+            }
+        }
+        
+        &-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4rem;
+            height: 5rem;
+            border: none;
+            padding: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &-text{
+        position: relative;
+        font-style: italic;
+        margin-top: 2rem;
+        padding: 1rem;
+        border: 2px solid #49bf15;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -2rem;
+            left: 4rem;
+            width: 2rem;
+            height: 2rem;
+            background-color: #fff;
+            border: 2px solid #49bf15;
+            border-bottom: none;
+            border-top-right-radius: 100px;
+        }
+    }
+
+    &-form {
+        text-align: center;
+        margin-top: 5rem;
+        background-color: #fff;
+        padding: 4rem 10rem;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        label {
+            transform: translateX(-50%) translateY(30%)
+        }
+
+    }
+            &-btn {
+                max-width: 30rem;
+                margin: auto;
+            }
+
+    .hand {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 30rem;
+    }
+
+    span {
+        padding: 0;
+        color: #000;
+        background-color: transparent;
+    }
+}
+
+.section-header h2 {
+    margin: 5rem 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.6rem;
+}
+
+/* Секция с отзывами */
+
+
 @media screen and (max-width: 1200px) {
     .main .phone-link {
         font-size: 1.5rem;
+    }
+
+    .feedback {
+        &-form {
+            padding: 3rem 1rem;
+        }
+
+        .fotorama {
+            margin-bottom: 3rem;
+        }
     }
 }
 
@@ -384,6 +513,12 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
             font-size: 1rem;
         }
     }
+
+    .feedback {
+        .hand {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -392,6 +527,30 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
 
         .phone-link {
             font-size: 2rem;
+        }
+    }
+
+    .price {
+        &-button {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header {
+            margin: 0;
+        }
+
+        &-block {
+            margin-top: 2rem;
+        }
+    }
+
+    .feedback {
+        &-prev-btn {
+            left: 0;
+        }
+        &-next-btn {
+            right: 0;
         }
     }
 }
