@@ -1,25 +1,24 @@
-$(document).ready(function() {
-    $('.popup-btn').on('click', function(e) {
+$(document).ready(function () {
+    $('.popup-btn').on('click', function (e) {
         e.preventDefault();
         $('.popup').fadeIn(500);
     });
 
-    $('.popup-close, .popup').on('click', function(e) {
+    $('.popup-close, .popup').on('click', function (e) {
         e.preventDefault();
         $('.popup').fadeOut(100);
     });
 
     $('.feedback-slider').slick({
-        prevArrow: '<button typr="button" class="feedback-slider-btn feedback-prev-btn"><img src="img/feedback/left-arrow.png"></button>',
-        nextArrow: '<button typr="button" class="feedback-slider-btn feedback-next-btn"><img src="img/feedback/right-arrow.png"></button>'
+        prevArrow: `<button typr="button" class="feedback-slider-btn feedback-prev-btn"><img src="img/feedback/left-arrow.png"></button>`,
+        nextArrow: `<button typr="button" class="feedback-slider-btn feedback-next-btn"><img src="img/feedback/right-arrow.png"></button>`
     });
 
     $('.feature-slider').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 991,
                 settings: {
                     slidesToShow: 2,

@@ -479,6 +479,186 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
 
 /* Секция с отзывами */
 
+/* Секция со схемами */
+.scheme {
+    .section-header {
+        h2 {
+            @include bold;
+            font-size: 3.6rem;
+        }
+        p {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+    }
+    background: #fff url('../img/shemes/scheme-bg.png') bottom -10rem right -10rem no-repeat;
+    background-size: 65rem;
+    &-block {
+        min-height: 30rem;
+        h3 {
+            font-size: 2rem;
+            @include bold;
+        }
+    }
+}
+/* Секция со схемами */
+
+/* Мы развеем все опасения */
+.problems {
+    position: relative;
+    &-woman {
+        position: absolute;
+        width: 30rem; 
+        bottom: 0;
+        left: 50%;
+        margin-left: -17rem;
+    }
+    &-list {
+        border: 4px solid;
+        padding: 2rem;
+        min-height: 35rem;
+        margin-bottom: 2rem;
+        h4 {
+            //color: $problems-color;
+            @include bold;
+            font-size: 2.1rem;
+            
+        }
+        ul {
+            list-style: none;
+            padding: 2rem;
+            li {
+               &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                display: inline-block;
+                width: 3rem;
+                height: 3rem;
+                background-color: #000;
+               }
+               padding-left: 3.5rem;
+               position: relative;
+               margin-bottom: 3rem;
+            }
+
+        }
+        &_bad {
+            border-color: $problems-color;
+            h4 {
+                opacity: 0.5;
+            }
+
+            ul li:before {
+                background: url(../img/problems/problem.png) center no-repeat;
+                background-size: 70%;
+            }
+        }
+
+        &_good {
+            border-color: $sectionBGColor;
+            ul li:before {
+                background: url(../img/problems/good.png) center no-repeat;
+                background-size: 70%;
+            }
+        }
+    }
+}
+/* Мы развеем все опасения */
+
+.all-inclusive {
+    .section-header {
+        h2 {
+            color: $sectionBGColor;
+            @include bold;
+        }
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    .media {
+        align-items: center;
+        min-height: 9rem;
+        &-body {
+            margin-left: 1rem;
+        }
+        h4 {
+            @include bold;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.circle {
+    display: inline-block;
+    background-color: $sectionBGColor;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    &-border {
+        display: inline-block;
+        width: 5rem;
+        height: 5rem;
+        padding: 0.3rem;
+        border: 2px solid $sectionBGColor;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 4rem;
+        color: $textColor;
+        @include bold;
+        font-size: 1.9rem;
+    }
+}
+
+//Материалы
+.materials {
+    background: $bgColor url(../img/materials-bg.jpg) center no-repeat;
+    background-size: cover;
+    p {
+        font-size: 1.6rem;
+    }
+    .section-header {
+        p {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+    }
+    &-slider {
+        padding-top: 5rem;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &-link {
+        font-size: 1.6rem;
+        color: $mainColor;
+        border-bottom: 1px dotted $mainColor;
+
+        &:hover {
+            color: darken($color: $mainColor, $amount: 10%)
+        }
+    }
+
+    &-offer {
+        margin-top: 4rem;
+        text-align: center;
+    }
+}
+
+//Материалы
+
+@media screen and (max-width: 1240px) {
+    .scheme {
+        background-size: 55rem;
+    }
+}
+
 
 @media screen and (max-width: 1200px) {
     .main .phone-link {
@@ -494,6 +674,8 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
             margin-bottom: 3rem;
         }
     }
+
+    
 }
 
 
@@ -517,6 +699,21 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
     .feedback {
         .hand {
             display: none;
+        }
+    }
+
+    .scheme {
+        background-size: 48rem;
+    }
+
+    .problems {
+        &-woman {
+            display: none;
+        }
+    }
+    .problems {
+        &-list {
+            min-height: 43rem;
         }
     }
 }
@@ -553,4 +750,13 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
             right: 0;
         }
     }
+
+    .scheme {
+        background: none;
+         text-align: center;
+         &-block {
+             min-height: auto;
+         }
+    }
+    
 }
