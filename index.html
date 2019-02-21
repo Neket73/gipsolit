@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="slick/slick/slick.css">
@@ -43,8 +44,8 @@
             <div class="main-content">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="main-title">
-                            <h1>Автоматизированная штукатурка стен</h1>
+                        <div class="main-title wow fadeInLeft">
+                            <h1>Автоматизированная штукатурка стен</h1>
                             <p>Идеально ровные стены <br> в кратчайшие сроки</p>
                             <span>
                                 стоимость работ <br>
@@ -54,13 +55,13 @@
                         </div>
                     </div>
                     <div class="col-md-4 offset-md-2">
-                        <div class="main-form">
+                        <div class="main-form wow faseInRight">
                             <h2>Для расчёта точной стоимости <br> закажите <strong>выезд замерщика</strong></h2>
                             <form action="#">
                                 <label for="name">Ваше имя</label>
-                                <input type="text" class="name" id="name">
+                                <input type="text" class="name" id="name" required>
                                 <label for="phone">Номер телефона</label>
-                                <input type="text" class="phone" id="phone">
+                                <input type="text" class="phone" id="phone" required>
                                 <button class="form-btn button">Оставьте заявку</button>
                                 <small>Подарок в день обращения</small>
                             </form>
@@ -70,94 +71,43 @@
             </div>
         </div>
     </main>
-    <!-- <section class="advantages">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 ">
-                    <h2 class="text-center">Преимущества работы с нами</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 text-center">
-                    <img src="img/advantate1.png" alt="Первое преимущество">
-                    <div class="advTitle">
-                        <p>Платите по факту</p>
-                    </div>
-                    <div class="adv_text">
-                        <p>Вы оплачиваете выполненные работы только после их выполнения. Никаких скрытых доплат и промежуточных платежей.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 text-center">
-                    <img src="img/advantate2.png" alt="Второе преимущество">
-                    <div class="advTitle">
-                        <p>Заключаем договор</p>
-                    </div>
-                    <div class="adv_text text-center">
-                        <p>Перед началом работ заключаем договор на юридическое лицо. Вы можете быть уверены, что все обязательства будут выполнены.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 text-center">
-                    <img src="img/advantate3.png" alt="Третье преимущество">
-                    <div class="advTitle">
-                        <p>Точно в срок</p>
-                    </div>
-                    <div class="adv_text">
-                        <p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, Вы платите меньше</p>
-                    </div>
-                </div>
-                <div class="col-md-3  text-center">
-                    <img src="img/advantate4.png" alt="Четвертое преимущество">
-                    <div class="advTitle">
-                        <p>Экономите на материалах</p>
-                    </div>
-                    <div class="adv_text">
-                        <p>Мы являемся структурным подразделением компании поставщика строительных смесей <a href="http://www.gicema.ru" target="_blank">gicema.ru</a> и даём Вам самые выгодные цены.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <section class="advantages">
         <div class="container">
             <h2 class="section-header">Преимущества работы с нами</h2>
             <div class="feature-slider">
-                <div class="advantages-block">
+                <div class="advantages-block wow fadeInUp" data-wow-delay="0.1s">
                     <div class="advantages-img">
                         <picture>
-                            <source srcset="img/svg/coin.svg" type="image/">
                             <img src="img/svg/coin.svg" alt="Платите по факту">
                         </picture>
                     </div>
                     <h3>Платите по факту</h3>
-                    <p>Вы оплачиваете выполненные работы только после их выполнения. Никаких скрытых доплат и
+                    <p>Вы оплачиваете выполненные работы только после их выполнения. Никаких скрытых доплат и
                         промежуточных платежей.</p>
                 </div>
-                <div class="advantages-block">
+                <div class="advantages-block wow fadeInUp" data-wow-delay="0.2s">
                     <div class="advantages-img">
                         <picture>
-                            <source srcset="/img/svg/open-folder.svg" type="image/">
                             <img src="img/svg/open-folder.svg" alt="Заключаем договор">
                         </picture>
                     </div>
                     <h3>Заключаем договор</h3>
-                    <p>Перед началом работ заключаем договор на юридическое лицо. Вы можете быть уверены, что все
+                    <p>Перед началом работ заключаем договор на юридическое лицо. Вы можете быть уверены, что все
                         обязательства будут выполнены.</p>
                 </div>
-                <div class="advantages-block">
+                <div class="advantages-block wow fadeInUp" data-wow-delay="0.3s">
                     <div class="advantages-img">
                         <picture>
-                            <source srcset="/img/svg/clock.svg" type="image/">
                             <img src="img/svg/clock.svg" alt="Точно в срок">
                         </picture>
                     </div>
                     <h3>Точно в срок</h3>
-                    <p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, Вы
+                    <p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, Вы
                         платите меньше</p>
                 </div>
-                <div class="advantages-block">
+                <div class="advantages-block wow fadeInUp" data-wow-delay="0.4s">
                     <div class="advantages-img">
                         <picture>
-                            <source srcset="/img/svg/piggy.svg" type="image/">
                             <img src="img/svg/piggy.svg" alt="Экономите на материалах">
                         </picture>
                     </div>
@@ -186,7 +136,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="price-block">
+                    <div class="price-block wow fadeInUp" data-wow-delay="0.1s">
                         <h4>Штукатурка по вашим материалам</h4>
                         <div class="price-img">
                             <img src="img/prices/1.jpg" alt="Штукатурка по вашим материалам">
@@ -200,7 +150,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="price-block">
+                    <div class="price-block wow fadeInUp" data-wow-delay="0.2s">
                         <h4>Штукатурка под шпаклевку</h4>
                         <div class="price-img">
                             <img src="img/prices/2.jpg" alt="Штукатурка под шпаклевку">
@@ -216,7 +166,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="price-block">
+                    <div class="price-block wow fadeInUp" data-wow-delay="0.3s">
                         <h4>Штукатурка под обои</h4>
                         <div class="price-img">
                             <img src="img/prices/3.jpg" alt="Штукатурка под обои">
@@ -247,12 +197,12 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="fotorama" data-nav="thumbs">
-                                <img src="img/feedback/photo/1.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/2.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/3.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/4.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/5.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/6.jpg" alt="" srcset="">
+                                <img src="img/feedback/photo/1.jpg" alt="">
+                                <img src="img/feedback/photo/2.jpg" alt="">
+                                <img src="img/feedback/photo/3.jpg" alt="">
+                                <img src="img/feedback/photo/4.jpg" alt="">
+                                <img src="img/feedback/photo/5.jpg" alt="">
+                                <img src="img/feedback/photo/6.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-md-6 parametrs">
@@ -282,12 +232,12 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="fotorama" data-nav="thumbs">
-                                <img src="img/feedback/photo/1.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/2.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/3.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/4.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/5.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/6.jpg" alt="" srcset="">
+                                <img src="img/feedback/photo/1.jpg" alt="">
+                                <img src="img/feedback/photo/2.jpg" alt="">
+                                <img src="img/feedback/photo/3.jpg" alt="">
+                                <img src="img/feedback/photo/4.jpg" alt="">
+                                <img src="img/feedback/photo/5.jpg" alt="">
+                                <img src="img/feedback/photo/6.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-md-6 parametrs">
@@ -317,12 +267,12 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="fotorama" data-nav="thumbs">
-                                <img src="img/feedback/photo/1.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/2.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/3.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/4.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/5.jpg" alt="" srcset="">
-                                <img src="img/feedback/photo/6.jpg" alt="" srcset="">
+                                <img src="img/feedback/photo/1.jpg" alt="">
+                                <img src="img/feedback/photo/2.jpg" alt="">
+                                <img src="img/feedback/photo/3.jpg" alt="">
+                                <img src="img/feedback/photo/4.jpg" alt="">
+                                <img src="img/feedback/photo/5.jpg" alt="">
+                                <img src="img/feedback/photo/6.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-md-6 parametrs">
@@ -353,15 +303,15 @@
                 <div class="col-md-8 offset-md-2">
                     <div class="feedback-form">
                         <h3>Хотите так же? Оставьте Ваши контактные данные</h3>
-                        <form action="" class="form">
+                        <form action="#" class="form">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="name">Ваше имя</label>
-                                    <input type="text" class="name" id="name">
+                                    <label for="name2">Ваше имя</label>
+                                    <input type="text" class="name" id="name2" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="phone">Номер телефона</label>
-                                    <input type="text" class="phone" id="phone">
+                                    <label for="phone2">Номер телефона</label>
+                                    <input type="text" class="phone" id="phone2" required>
                                 </div>
                             </div>
                             <button class="form-btn feedback-btn button">Оставьте заявку</button>
@@ -374,7 +324,6 @@
         <img src="img/hand.png" class="hand" alt="">
 
     </section>
-
 
     <section class="scheme">
         <div class="container">
@@ -428,11 +377,11 @@
                 <div class="col-lg-3 col-md-4">
                     <div class="media">
                         <div class="media-left">
-                            <span class="circle-border">
-                                <sapn class="circle">
+                            <div class="circle-border">
+                                <span class="circle">
                                     1.
-                                </sapn>
-                            </span>
+                                </span>
+                            </div>
                         </div>
                         <div class="media-body">
                             <h4>Материал:</h4>
@@ -443,14 +392,14 @@
                 <div class="col-lg-3 col-md-4">
                     <div class="media">
                         <div class="media-left">
-                            <span class="circle-border">
-                                <sapn class="circle">
+                            <div class="circle-border">
+                                <span class="circle">
                                     2.
-                                </sapn>
-                            </span>
+                                </span>
+                            </div>
                         </div>
                         <div class="media-body">
-                            <h4>Доставка оборудования и материала на объект</h4>
+                            <h4>Доставка оборудования и материала на объект</h4>
 
                         </div>
                     </div>
@@ -458,11 +407,11 @@
                 <div class="col-lg-3 col-md-4">
                     <div class="media">
                         <div class="media-left">
-                            <span class="circle-border">
-                                <sapn class="circle">
+                            <div class="circle-border">
+                                <span class="circle">
                                     3.
-                                </sapn>
-                            </span>
+                                </span>
+                            </div>
                         </div>
                         <div class="media-body">
                             <h4>Подготовка поверхности </h4>
@@ -473,11 +422,11 @@
                 <div class="col-lg-3 col-md-4">
                     <div class="media">
                         <div class="media-left">
-                            <span class="circle-border">
-                                <sapn class="circle">
+                            <div class="circle-border">
+                                <span class="circle">
                                     4.
-                                </sapn>
-                            </span>
+                                </span>
+                            </div>
                         </div>
                         <div class="media-body">
                             <h4>Установка маяков</h4>
@@ -487,25 +436,25 @@
                 <div class="col-lg-3 col-md-4">
                     <div class="media">
                         <div class="media-left">
-                            <span class="circle-border">
-                                <sapn class="circle">
+                            <div class="circle-border">
+                                <span class="circle">
                                     5.
-                                </sapn>
-                            </span>
+                                </span>
+                            </div>
                         </div>
                         <div class="media-body">
-                            <h4>Оштукатуривание поверхности</h4>
+                            <h4>Оштукатуривание поверхности</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4">
                     <div class="media">
                         <div class="media-left">
-                            <span class="circle-border">
-                                <sapn class="circle">
+                            <div class="circle-border">
+                                <span class="circle">
                                     6.
-                                </sapn>
-                            </span>
+                                </span>
+                            </div>
                         </div>
                         <div class="media-body">
                             <h4>Удаление маяков</h4>
@@ -515,11 +464,11 @@
                 <div class="col-lg-3 col-md-4">
                     <div class="media">
                         <div class="media-left">
-                            <span class="circle-border">
-                                <sapn class="circle">
+                            <div class="circle-border">
+                                <span class="circle">
                                     7.
-                                </sapn>
-                            </span>
+                                </span>
+                            </div>
                         </div>
                         <div class="media-body">
                             <h4>Глянцевание</h4>
@@ -529,11 +478,11 @@
                 <div class="col-lg-3 col-md-4">
                     <div class="media">
                         <div class="media-left">
-                            <span class="circle-border">
-                                <sapn class="circle">
+                            <div class="circle-border">
+                                <span class="circle">
                                     8.
-                                </sapn>
-                            </span>
+                                </span>
+                            </div>
                         </div>
                         <div class="media-body">
                             <h4>Уборка и вывоз мусора</h4>
@@ -566,9 +515,9 @@
                     <div class="problems-list problems-list_good">
                         <h4>Наши решения:</h4>
                         <ul>
-                            <li>Высокая квалификация специалистов + минимум 5 летний опыт работы = идеально ровные
+                            <li>Высокая квалификация специалистов + минимум 5 летний опыт работы = идеально ровные
                                 поверхности</li>
-                            <li>Соблюдаем сроки, которые прописаны в договоре. На квартиру площадью 135 м2 уходит от 3
+                            <li>Соблюдаем сроки, которые прописаны в договоре. На квартиру площадью 135 м2 уходит от 3
                                 до 5 дней</li>
                             <li>Доставка материала и подъём бесплатно</li>
                             <li>Убираем и вывозим мусор после работ</li>
@@ -616,7 +565,7 @@
                     <h3>Forman</h3>
                     <p>Аква слой <strong>245</strong> руб/меш<br>
                         Гипс актив <strong>245</strong> руб/меш</p>
-                     <a href="#" class="materials-link">Сертификат</a>   
+                    <a href="#" class="materials-link">Сертификат</a>
                 </div>
                 <div class="advantages-block">
                     <div class="materials-img">
@@ -627,12 +576,147 @@
                     <h3>Ceresit</h3>
                     <p>Аква слой <strong>245</strong> руб/меш<br>
                         Гипс актив <strong>245</strong> руб/меш</p>
-                     <a href="#" class="materials-link">Сертификат</a>   
+                    <a href="#" class="materials-link">Сертификат</a>
                 </div>
             </div>
-            <p class="materials-offer">Вы можете приобрести материалы по оптовым ценам на сайте <a href="#" class="materials-link">gicema.ru</a> или по телефону <strong>+7 495 790 69 90</strong></p>
+            <p class="materials-offer">Вы можете приобрести материалы по оптовым ценам на сайте <a href="#" class="materials-link">gicema.ru</a>
+                или по телефону <strong>+7 495 790 69 90</strong></p>
         </div>
     </section>
+
+
+    <section class="tour">
+        <div class="container">
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="main-title">
+                            <h2>Посмотрите <br>как мы работаем</h2>
+                            <p class="main-subtitle tour-subtitle">Хотите удостовериться в профессионализме наших
+                                сотрудников?</p>
+                            <p class="main-subtitle tour-subtitle">Вы можете сделать это, приехав на один из наших
+                                объектов, и понаблюдав за ходом работ. Увидите оборудование, материалы и качество
+                                исполнения.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offset-md-2">
+                        <div class="main-form">
+                            <h2>Оставьте контактные данные для связи</h2>
+                            <form action="#">
+                                <label for="name4">Ваше имя</label>
+                                <input type="text" class="name" id="name4" required>
+                                <label for="phone3">Номер телефона</label>
+                                <input type="text" class="phone" id="phone3" required>
+                                <button class="form-btn button">Записаться на просмотр</button>
+                                <small>Подберем ближайщий к вам объект</small>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upsell">
+        <div class="container">
+            <div class="section-header section-header_light">
+                <h2>Дополнительные услуги</h2>
+                <p>Помимо штукатурных работ Вы можете заказать у нас следующие услуги</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="upsell-block">
+                        <img src="img/tour/1.jpg" alt="Монтаж электропроводки">
+                        <p>Монтаж электропроводки</p>
+                        <button class="button">Цены</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="upsell-block">
+                        <img src="img/tour/2.jpg" alt="Стяжка пола">
+                        <p>Стяжка пола</p>
+                        <button class="button">Цены</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="upsell-block">
+                        <img src="img/tour/3.jpg" alt="Сантехнические работы">
+                        <p>Сантехнические работы</p>
+                        <button class="button">Цены</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="contacts-header">Контакты</h2>
+                    <p>Адрес офиса:<br> Челябинск, копейское шоссе, 12, офис 34</p>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2281.480629350843!2d61.5078172354986!3d55.122364690461055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c5f31d5482dc45%3A0xd392a28a2dc19ba!2z0JrQvtC_0LXQudGB0LrQvtC1INGILiwgMTIsINCn0LXQu9GP0LHQuNC90YHQuiwg0KfQtdC70Y_QsdC40L3RgdC60LDRjyDQvtCx0LsuLCA0NTQwMTI!5e0!3m2!1sru!2sru!4v1550743686448"
+                            class="myIFrame" allowfullscreen></iframe>
+                    </div>
+                    <p>Номер телефона: <br><strong>+7 495 771 05 08</strong></p>
+                    <p>E-mail:<br>
+                        <a href="mailto:order@gipsolit.ru">order@gipsolit.ru</a>
+                    </p>
+
+                    <p>Реквизиты: <br>ИНН 35453453 ОГРН 34234234</p>
+                </div>
+                <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1 col-sm-6 offset-sm-3">
+                    <div class="main-form">
+                        <h2>Оставьте контактные данные для связи</h2>
+                        <form action="#">
+                            <label for="name3">Ваше имя</label>
+                            <input type="text" class="name" id="name3" required>
+                            <label for="phone4">Номер телефона</label>
+                            <input type="text" class="phone" id="phone4" required>
+                            <label for="email">Email</label>
+                            <input type="email" class="email" id="email" required>
+                            <label for="message">Сообщение</label>
+                            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                            <button class="form-btn button">Оставьте заявку</button>
+                            <small>Подберем ближайщий к вам объект</small>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-logo">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="logoText">
+                        <p class="text-uppercase font-weight-bold">Гипсолит</p>
+                        <p>Штукатурка стен</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-contacts">
+                        <p><strong>+7 495 771 05 08</strong></p>
+                        <p>
+                            <a href="mailto:order@gipsolit.ru">order@gipsolit.ru</a>
+                        </p>
+                        <p>Пн-Пт: с 9:00 до 18:00</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-dev-logo">
+                        <p>Разработка сайта:</p>
+                        <img src="img/dev-logo.png" alt="Веб-кенгуру">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Модальные окна -->
     <!-- получить консультацию -->
@@ -646,10 +730,10 @@
                 <p>Оставьте свои контактные данные <br>для связи</p>
                 <div class="popup-form">
                     <form action="#">
-                        <label for="name">Ваше имя</label>
-                        <input type="text" class="name" id="name">
-                        <label for="phone">Номер телефона</label>
-                        <input type="text" class="phone" id="phone">
+                        <label for="name5">Ваше имя</label>
+                        <input type="text" class="name" id="name5" required>
+                        <label for="phone5">Номер телефона</label>
+                        <input type="text" class="phone" id="phone5" required>
                         <label for="phone">Сообщение</label>
                         <textarea name="main-form-textarea" cols="30" rows="5"></textarea>
                         <button class="form-btn button">Оставьте заявку</button>
@@ -660,7 +744,9 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="slick/slick/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 

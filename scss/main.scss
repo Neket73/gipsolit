@@ -16,8 +16,14 @@ section {
     padding: fromPxToRem(100px) 0;
 }
 
-button, textarea, button:active, textarea:active, button:focus, textarea:focus  {
+button,
+textarea,
+button:active,
+textarea:active,
+button:focus,
+textarea:focus {
     outline: none;
+    border: 1px solid #ddd;
 }
 
 .main {
@@ -41,8 +47,10 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.main, .popup, .feedback {
-    
+.main,
+.popup,
+.feedback {
+
     padding: 4rem 0;
 
     &-content {
@@ -210,13 +218,14 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
     &-block {
         text-align: center;
     }
-    &-img img{
+
+    &-img img {
         height: 8rem;
         display: block;
         margin: 0 auto;
         margin-bottom: 3rem;
     }
-    
+
     .slick-active {
         outline: none;
     }
@@ -254,6 +263,7 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
     z-index: 9;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
+
     &-close {
         position: absolute;
         right: -1.5rem;
@@ -265,9 +275,10 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
         font-size: 3rem;
         color: $textColor;
     }
+
     &-content {
         position: fixed;
-        left:50%;
+        left: 50%;
         top: 10%;
         transform: translateX(-50%);
         background-color: $textColor;
@@ -285,7 +296,7 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
 .price {
     background-color: #005e00;
 
-    .section-header{
+    .section-header {
         text-align: center;
         margin: 2rem 0 10rem;
         color: #fff;
@@ -306,7 +317,7 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
         margin-top: 2.5rem;
     }
 
-    
+
 
     &-block {
         padding: 1rem 3rem 4rem;
@@ -315,7 +326,7 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
         box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
         text-align: center;
 
-        h4{
+        h4 {
             margin: 3rem 0rem;
             font-size: 1.7rem;
             font-weight: bold;
@@ -350,15 +361,16 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
         }
     }
 
-    &-img{
-        img{
+    &-img {
+        img {
             width: 100%;
             max-height: 18.8rem;
         }
     }
 
-    
+
 }
+
 /* Секция с ценами */
 
 
@@ -390,14 +402,14 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
             font-size: 1.4rem;
 
             &-body {
-                margin-left: 1.5rem; 
+                margin-left: 1.5rem;
             }
 
             &-heading {
                 font-weight: bold;
             }
         }
-        
+
         &-btn {
             position: absolute;
             top: 50%;
@@ -413,12 +425,13 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
         }
     }
 
-    &-text{
+    &-text {
         position: relative;
         font-style: italic;
         margin-top: 2rem;
         padding: 1rem;
         border: 2px solid #49bf15;
+
         &:before {
             content: '';
             display: block;
@@ -451,10 +464,11 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
         }
 
     }
-            &-btn {
-                max-width: 30rem;
-                margin: auto;
-            }
+
+    &-btn {
+        max-width: 30rem;
+        margin: auto;
+    }
 
     .hand {
         position: absolute;
@@ -486,67 +500,80 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
             @include bold;
             font-size: 3.6rem;
         }
+
         p {
             text-align: center;
             font-size: 1.6rem;
         }
     }
+
     background: #fff url('../img/shemes/scheme-bg.png') bottom -10rem right -10rem no-repeat;
     background-size: 65rem;
+
     &-block {
         min-height: 30rem;
+
         h3 {
             font-size: 2rem;
             @include bold;
         }
     }
 }
+
 /* Секция со схемами */
 
 /* Мы развеем все опасения */
 .problems {
     position: relative;
+
     &-woman {
         position: absolute;
-        width: 30rem; 
+        width: 30rem;
         bottom: 0;
         left: 50%;
         margin-left: -17rem;
     }
+
     &-list {
         border: 4px solid;
         padding: 2rem;
         min-height: 35rem;
         margin-bottom: 2rem;
+
         h4 {
             //color: $problems-color;
             @include bold;
             font-size: 2.1rem;
-            
+
         }
+
         ul {
             list-style: none;
             padding: 2rem;
+
             li {
-               &:before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                display: inline-block;
-                width: 3rem;
-                height: 3rem;
-                background-color: #000;
-               }
-               padding-left: 3.5rem;
-               position: relative;
-               margin-bottom: 3rem;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: inline-block;
+                    width: 3rem;
+                    height: 3rem;
+                    background-color: #000;
+                }
+
+                padding-left: 3.5rem;
+                position: relative;
+                margin-bottom: 3rem;
             }
 
         }
+
         &_bad {
             border-color: $problems-color;
+
             h4 {
                 opacity: 0.5;
             }
@@ -559,6 +586,7 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
 
         &_good {
             border-color: $sectionBGColor;
+
             ul li:before {
                 background: url(../img/problems/good.png) center no-repeat;
                 background-size: 70%;
@@ -566,6 +594,7 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
         }
     }
 }
+
 /* Мы развеем все опасения */
 
 .all-inclusive {
@@ -574,17 +603,21 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
             color: $sectionBGColor;
             @include bold;
         }
+
         p {
             text-align: center;
             font-size: 1.5rem;
         }
     }
+
     .media {
         align-items: center;
         min-height: 9rem;
+
         &-body {
             margin-left: 1rem;
         }
+
         h4 {
             @include bold;
             font-size: 1.6rem;
@@ -618,18 +651,22 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
 .materials {
     background: $bgColor url(../img/materials-bg.jpg) center no-repeat;
     background-size: cover;
+
     p {
         font-size: 1.6rem;
     }
+
     .section-header {
         p {
             text-align: center;
             font-size: 1.6rem;
         }
     }
+
     &-slider {
         padding-top: 5rem;
     }
+
     img {
         display: block;
         margin: 0 auto;
@@ -641,7 +678,8 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
         border-bottom: 1px dotted $mainColor;
 
         &:hover {
-            color: darken($color: $mainColor, $amount: 10%)
+            color: darken($color: $mainColor, $amount: 10%);
+            text-decoration: none;
         }
     }
 
@@ -652,6 +690,128 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
 }
 
 //Материалы
+
+
+//Посмотри как мы работаем
+.tour {
+    background: #fff url(../img/our-work-bg.jpg) center no-repeat;
+    background-size: cover;
+
+    &-subtitle {
+        font-size: 2.2rem;
+
+    }
+
+    .main-form {
+        .button {
+            font-size: 1.49rem;
+        }
+    }
+}
+
+//Посмотри как мы работаем
+
+
+//Доп услуги
+.upsell {
+    background: $sectionBGColor;
+    color: $textColor;
+
+    p {
+        font-size: 2rem;
+    }
+
+    .section-header {
+        text-align: center;
+        font-size: 1.6rem;
+
+    }
+
+    &-block {
+        img {
+            display: inline-block;
+            margin-bottom: 2rem;
+            width: 100%;
+            max-width: 30rem;
+        }
+
+        text-align: center;
+        min-height: 30rem;
+    }
+}
+
+//Доп услуги
+
+//Контакты
+.contacts {
+    background: #fff url('../img/contacts-bg.jpg') center no-repeat;
+
+    .contacts-header {
+        font-size: 3.6rem;
+        @include bold;
+    }
+
+    p {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    #message {
+        width: 100%
+    }
+    .myIFrame {
+        width: 60rem;
+        height: 30rem;
+        border: none;
+    }
+}
+
+//Контакты
+
+//Фуеер
+.footer {
+    &-contacts {
+        display: block;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+
+     &-dev-logo {
+         text-align: right;
+     }
+
+    p {
+        margin: 0;
+    }
+
+    .row {
+        .footer-logo {
+            display: flex;
+
+            .logoText {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                margin-left: 1rem;
+
+                .text-uppercase {
+                    font-size: 2rem;
+                    @include bold;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+//Фуеер
+
 
 @media screen and (max-width: 1240px) {
     .scheme {
@@ -675,7 +835,7 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
         }
     }
 
-    
+
 }
 
 
@@ -711,16 +871,51 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
             display: none;
         }
     }
+
     .problems {
         &-list {
             min-height: 43rem;
         }
     }
+
+    .contacts {
+        background-color: #fff;
+        background: none;
+        &-form {
+            margin-top: 3rem;
+        }
+    }
+    .footer {
+        text-align: center;
+
+        &-logo {
+            justify-content: center;
+        }
+
+        &-contacts {
+            margin: 2rem 0;
+        }
+        &-dev-logo {
+            text-align: center;
+        }
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .main {
         background-position: top right;
+
+        &-title {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .wrap-content {
+            button {
+                margin-top: 4.5rem;
+            }
+        }
 
         .phone-link {
             font-size: 2rem;
@@ -746,6 +941,7 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
         &-prev-btn {
             left: 0;
         }
+
         &-next-btn {
             right: 0;
         }
@@ -753,10 +949,11 @@ button, textarea, button:active, textarea:active, button:focus, textarea:focus  
 
     .scheme {
         background: none;
-         text-align: center;
-         &-block {
-             min-height: auto;
-         }
+        text-align: center;
+
+        &-block {
+            min-height: auto;
+        }
     }
-    
+
 }
